@@ -1,0 +1,35 @@
+###
+POST http://localhost:9000/api/mascotas/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Tito",
+    "tipo": "Gato",
+    "edad": 4,
+    "comidas": [
+      
+    ]
+}
+
+###
+GET http://localhost:9000/api/mascotas/ HTTP/1.1
+
+###
+GET http://localhost:9000/api/mascotas/656d1add704ceb316a759364 HTTP/1.1
+
+
+###
+DELETE http://localhost:9000/api/mascotas/656d1fc02c7d36367fbcc416 HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/mascotas/656d229e2c7d36367fbcc445/comidas HTTP/1.1
+Content-Type: application/json
+
+{
+    "comidas": [
+        {
+            "cantidad": 1
+        }
+    ]
+}
